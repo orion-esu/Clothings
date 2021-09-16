@@ -1,7 +1,7 @@
 {
-  "name": "E-commerce",
+  "name": "Nexter",
   "version": "1.0.0",
-  "description": "E-commerce webpage",
+  "description": "Nexter webpage",
   "main": "index.js",
   "scripts": {
     "watch:sass": "node-sass sass/main.scss css/style.css -w",
@@ -17,6 +17,7 @@
   "devDependencies": {
     "autoprefixer": "^7.1.4",
     "concat": "^1.0.3",
+    "node-dev": "^7.0.0",
     "node-sass": "^4.5.3",
     "npm-run-all": "^4.1.1",
     "postcss-cli": "^4.1.1"
