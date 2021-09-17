@@ -7,3 +7,421 @@
 
 html {
   font-size: 62.5%; }
+
+body {
+  font-family: "Nunito", sans-serif;
+  font-weight: 300; }
+
+img {
+  max-width: 100%;
+  display: block; }
+
+a {
+  text-decoration: none;
+  display: block; }
+
+li {
+  list-style: none; }
+
+.heading-2 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 3rem;
+  font-weight: 600; }
+
+.nav__account--heading {
+  font-size: 2.5rem;
+  font-family: "Josefin Sans", sans-serif;
+  color: #999;
+  letter-spacing: .5px;
+  font-weight: 300; }
+
+.nav__cart--title {
+  font-size: 2.5rem;
+  font-family: "Josefin Sans", sans-serif;
+  color: #999;
+  letter-spacing: 1px;
+  font-weight: 300; }
+
+.deals__description {
+  font-size: 2rem;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  color: #101d2c; }
+
+.footer {
+  font-family: "Josefin Sans", sans-serif; }
+  .footer__details--text {
+    font-size: 1.6rem;
+    color: #777;
+    line-height: 1.7;
+    letter-spacing: .5px; }
+    .footer__details--text span {
+      font-weight: 400; }
+  .footer .copy {
+    font-size: 1.3rem;
+    color: #777; }
+
+.newsletter-heading {
+  font-size: 2.5rem;
+  color: #101d2c; }
+
+.logo-text {
+  font-family: 'Gochi Hand', cursive;
+  font-weight: 400;
+  font-size: 4rem;
+  color: #101d2c; }
+
+.fas,
+.far {
+  font-size: 2rem; }
+
+.mt-sm {
+  margin-top: 2rem; }
+
+.ml-sm {
+  margin-left: 1rem; }
+
+.mr-sm {
+  margin-right: 1rem; }
+
+.features__section {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: end; }
+  .features__section::before {
+    content: "";
+    position: absolute;
+    top: 20px;
+    display: block;
+    width: 80%;
+    height: 80%;
+    border: 1.5rem solid rgba(247, 247, 247, 0.4);
+    transform: scale(0);
+    transition: .5s ease;
+    transform-origin: center; }
+  .features__section:hover::before {
+    transform: scale(1); }
+
+.features--caption {
+  font-size: 2.5rem;
+  color: #000;
+  font-weight: 600;
+  font-family: "Josefin Sans", sans-serif;
+  background-color: #fff;
+  padding: 1rem 2.5rem;
+  border-radius: 2px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  position: absolute; }
+
+.cart-icon {
+  border: none;
+  border-radius: 0;
+  position: absolute;
+  background-color: #fff;
+  padding: 1rem 3rem;
+  transform: scale(0);
+  opacity: 0;
+  transition: .2s ease;
+  cursor: pointer;
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  align-items: center;
+  gap: .8rem; }
+  .cart-icon--text {
+    font-size: 1.8rem;
+    font-weight: 500; }
+
+.fa-shopping-cart {
+  color: #c69963;
+  font-size: 2rem; }
+
+.product__details {
+  padding: 3rem 2rem; }
+
+.product-title {
+  font-size: 1.6rem;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  text-align: center; }
+
+.product-cost {
+  font-size: 2rem;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 600;
+  color: #c69963; }
+
+.product-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; }
+
+.product .product__2,
+.product .product__3,
+.product .product__4,
+.product .product__5,
+.product .product__6,
+.product .product__7 {
+  transition: .2s ease;
+  position: relative;
+  display: grid;
+  align-items: center;
+  justify-items: center; }
+  .product .product__2:hover,
+  .product .product__3:hover,
+  .product .product__4:hover,
+  .product .product__5:hover,
+  .product .product__6:hover,
+  .product .product__7:hover {
+    background-color: #fff;
+    box-shadow: 0 1rem 2rem #eee; }
+  .product .product__2:hover .cart-icon,
+  .product .product__3:hover .cart-icon,
+  .product .product__4:hover .cart-icon,
+  .product .product__5:hover .cart-icon,
+  .product .product__6:hover .cart-icon,
+  .product .product__7:hover .cart-icon {
+    opacity: 1;
+    transform: scale(1); }
+
+.product__banner-img {
+  filter: brightness(70%); }
+
+.product__banner {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .product__banner--details {
+    position: absolute;
+    font-family: "Josefin Sans", sans-serif;
+    color: #fff; }
+  .product__banner--title {
+    font-weight: 700;
+    font-size: 5rem; }
+  .product__banner--link {
+    font-size: 2.5rem;
+    color: currentColor;
+    font-weight: 500;
+    border-bottom: 3px solid #fff;
+    padding-bottom: 3px;
+    margin-top: 3rem; }
+  @media only screen and (max-width: 51.5em) {
+    .product__banner-img {
+      width: 100%;
+      height: 50vh;
+      object-fit: cover; } }
+
+input[type="search"] {
+  border: none;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 2rem;
+  font-weight: 200;
+  padding: 1.5rem;
+  color: #999;
+  outline: 1px solid rgba(0, 0, 0, 0.2);
+  background-color: #f7f7f7;
+  letter-spacing: 1px;
+  width: 100%;
+  height: 100%; }
+  input[type="search"]:active, input[type="search"]:focus {
+    outline: 1.5px solid rgba(0, 0, 0, 0.2); }
+
+.search-btn {
+  background-color: #101d2c;
+  height: 100%;
+  padding: 1.6rem;
+  border: none;
+  outline: 1px solid rgba(0, 0, 0, 0.3);
+  cursor: pointer; }
+
+::placeholder {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 2rem;
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: 200;
+  letter-spacing: 1px; }
+
+.fa-search {
+  color: #fff;
+  font-weight: 400; }
+
+.container {
+  display: grid;
+  grid-template-rows: 1fr 80vh min-content min-content min-content min-content min-content min-content min-content;
+  grid-template-columns: [full-start] minmax(6rem, 1fr) repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) minmax(6rem, 1fr) [full-end]; }
+
+.nav {
+  grid-column: full-start/full-end;
+  display: grid;
+  grid-template-columns: max-content 1fr max-content max-content;
+  justify-items: center;
+  align-items: center;
+  gap: 3rem; }
+  .nav__search {
+    display: grid;
+    grid-template-columns: 1fr min-content;
+    width: 70%; }
+
+.gallery {
+  grid-column: full-start/full-end; }
+
+.header {
+  grid-column: full-start/full-end;
+  grid-row: 2/3; }
+
+.offer {
+  grid-column: col-end 7/full-end;
+  grid-row: 2/3; }
+
+.features {
+  grid-column: col-start 1/ col-end 8;
+  display: grid;
+  grid-template-rows: min-content min-content;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 3rem;
+  justify-content: center; }
+  @media only screen and (max-width: 28em) {
+    .features {
+      grid-template-columns: 1fr; } }
+  .features h2 {
+    grid-row: 1/2;
+    grid-column: 1/-1;
+    justify-self: center; }
+
+.product {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-rows: 1fr 1fr;
+  row-gap: 2rem;
+  column-gap: 2rem; }
+  .product__details {
+    display: grid;
+    grid-template-columns: max-content;
+    grid-template-rows: repeat(2, min-content);
+    justify-content: center;
+    justify-items: center;
+    row-gap: .5rem; }
+
+.products {
+  grid-column: col-start 1/ col-end 8;
+  display: grid;
+  grid-template-columns: 350px 1fr;
+  gap: 3rem;
+  align-items: center; }
+  @media only screen and (max-width: 59em) {
+    .products {
+      grid-template-columns: 250px 1fr; } }
+  @media only screen and (max-width: 51.5em) {
+    .products {
+      grid-template-columns: 1fr; } }
+  .products__men {
+    grid-template-columns: 1fr 350px;
+    grid-template-rows: min-content; }
+    .products__men .product__banner {
+      grid-column: 2/3; }
+      @media only screen and (max-width: 51.5em) {
+        .products__men .product__banner {
+          grid-column: 1/-1;
+          grid-row: 1/2; } }
+    .products__men .product {
+      grid-column: 1/2;
+      grid-row: 1/2; }
+      @media only screen and (max-width: 51.5em) {
+        .products__men .product {
+          grid-column: 1/-1;
+          grid-row: 2/3; } }
+    @media only screen and (max-width: 59em) {
+      .products__men {
+        grid-template-columns: 1fr 250px; } }
+    @media only screen and (max-width: 51.5em) {
+      .products__men {
+        grid-template-columns: 1fr;
+        grid-template-rows: min-content min-content; } }
+
+.deals {
+  grid-column: col-start 1/ col-end 8;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); }
+
+.footer {
+  grid-column: full-start/full-end;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  row-gap: 3rem;
+  justify-content: center;
+  justify-items: center;
+  align-items: center; }
+  @media only screen and (max-width: 28em) {
+    .footer {
+      grid-template-columns: min-content; } }
+
+.nav {
+  background-color: #f7f7f7;
+  padding: 2.5rem 5rem;
+  font-family: "Josefin Sans", sans-serif; }
+  .nav__account {
+    border: 0;
+    border-radius: 0; }
+    .nav__account .fa-user {
+      color: #101d2c; }
+  .nav__cart {
+    border: 0;
+    border-radius: 0; }
+    .nav__cart .fa-shopping-cart {
+      color: #101d2c; }
+
+.header {
+  background-color: #101d2c; }
+
+.offer {
+  background-color: #000; }
+
+.features {
+  margin: 5rem 0; }
+
+.products {
+  margin: 4rem 0; }
+
+.deals {
+  background-color: #f7f7f7;
+  padding: 3rem; }
+
+.gallery {
+  background-color: #333; }
+
+.footer {
+  padding: 5rem 3rem;
+  background-color: #f7f7f7; }
+  .footer .email {
+    border: none;
+    padding: 1rem;
+    outline: 1px solid #101d2c;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 1.6rem;
+    background-color: #f7f7f7;
+    letter-spacing: 1px;
+    color: #777;
+    margin-top: 1rem; }
+    .footer .email:active, .footer .email:focus {
+      outline: 2px solid #101d2c; }
+  .footer .newsletter {
+    display: grid;
+    grid-template-rows: repeat(3, min-content);
+    row-gap: 1rem; }
+    .footer .newsletter-btn {
+      background-color: #c69963;
+      font-size: 1.6rem;
+      border: none;
+      font-family: "Josefin Sans", sans-serif;
+      color: #fff;
+      padding: 1rem 1.5rem;
+      cursor: pointer; }
+
+.dot {
+  width: 1rem;
+  height: 1rem;
+  display: inline-block;
+  background-color: #c69963;
+  margin-left: -6px; }

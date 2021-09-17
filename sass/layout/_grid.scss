@@ -1,0 +1,138 @@
+// Grid Definitions
+
+.container {
+	display: grid;
+    grid-template-rows: 1fr 80vh min-content min-content min-content min-content min-content min-content min-content;
+    grid-template-columns:[full-start] minmax(6rem, 1fr) repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) minmax(6rem, 1fr) [full-end];
+}
+
+.nav{
+    grid-column: full-start/full-end;
+    display:grid;
+    grid-template-columns: max-content 1fr max-content max-content;
+    justify-items: center;
+    align-items: center;
+    gap: 3rem;
+
+    &__search{
+        display: grid;
+        grid-template-columns:1fr min-content;
+        width: 70%;
+    }
+}
+.gallery{
+    grid-column: full-start/full-end;
+}
+.header{
+    grid-column: full-start/full-end;
+    grid-row: 2/3;
+}
+.offer{
+    grid-column: col-end 7/full-end;
+    grid-row: 2/3;
+}
+
+.features{
+    grid-column: col-start 1/ col-end 8;
+    display: grid;
+    grid-template-rows: min-content min-content;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem;
+    justify-content: center;
+
+    @media only screen and (max-width: 28em){
+        grid-template-columns: 1fr;
+    }
+    
+    h2{
+        grid-row: 1/2;
+        grid-column: 1/-1;
+        justify-self: center;
+    }
+}
+.product{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-rows: 1fr 1fr;
+    row-gap: 2rem;
+    column-gap:2rem;
+
+    &__details{
+        display: grid;
+        grid-template-columns: max-content;
+        grid-template-rows: repeat(2, min-content);
+        justify-content: center;
+        justify-items: center;
+        row-gap: .5rem;
+    }
+
+
+}
+
+.products{
+    grid-column: col-start 1/ col-end 8;
+    display: grid;
+    grid-template-columns: 350px 1fr;
+    gap: 3rem;
+    align-items: center;
+
+    @media only screen and (max-width: 59em){
+        grid-template-columns: 250px 1fr;
+    }
+
+    @media only screen and (max-width: 51.5em){
+        grid-template-columns: 1fr;
+    }
+
+    &__men{
+        grid-template-columns: 1fr 350px;
+        grid-template-rows: min-content;
+
+      
+
+        .product__banner{
+            grid-column:2/3;
+
+            @media only screen and (max-width: 51.5em){
+              grid-column: 1/-1;
+              grid-row: 1/2;
+            }
+        }
+        .product{
+            grid-column: 1/2;
+            grid-row: 1/2;
+            @media only screen and (max-width: 51.5em){
+                grid-column: 1/-1;
+                grid-row: 2/3;
+              }
+        }
+
+        @media only screen and (max-width:59em){
+            grid-template-columns: 1fr 250px;
+        }
+        @media only screen and (max-width: 51.5em){
+            grid-template-columns: 1fr;
+            grid-template-rows: min-content min-content;
+        }
+    }
+}
+
+.deals{
+    grid-column: col-start 1/ col-end 8;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.footer{
+    grid-column: full-start/full-end;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    row-gap: 3rem;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+
+    @media only screen and (max-width: 28em){
+        grid-template-columns: min-content;
+    }
+}

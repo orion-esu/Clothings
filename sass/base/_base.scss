@@ -9,3 +9,22 @@
 html{
     font-size: 62.5%;
 }
+
+body{
+    font-family: $font-primary;
+    font-weight: 300;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+a{
+    text-decoration: none;
+    display: block;
+}
+
+li{
+    list-style: none;
+}

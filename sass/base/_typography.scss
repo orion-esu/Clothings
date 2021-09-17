@@ -1,0 +1,68 @@
+.heading-2{
+    font-family: $font-display;
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+
+.nav{
+
+    &__account--heading{
+        font-size: 2.5rem;
+        font-family: $font-display;
+        color: $color-gray-dark-1;
+        letter-spacing: .5px;
+        font-weight:300;
+    }
+
+    &__cart--title{
+        font-size: 2.5rem;
+        font-family: $font-display;
+        color: $color-gray-dark-1;
+        letter-spacing: 1px;
+        font-weight:300;
+    }
+}
+
+.deals__description{
+    font-size: 2rem;
+    font-family: $font-display;
+    font-weight: 300;
+    color: $color-secondary;
+}
+.footer{
+    font-family: $font-display;
+
+    &__details--text{
+        font-size: 1.6rem;
+        color: $color-gray;
+        line-height: 1.7;
+        letter-spacing: .5px;
+        
+        span{
+            font-weight: 400;
+        }
+    }
+
+    .copy{
+        font-size: 1.3rem;
+        color:$color-gray;
+    }
+}
+
+.newsletter-heading{
+    font-size: 2.5rem;
+    color:$color-secondary;
+}
+
+.logo-text{
+    font-family: 'Gochi Hand', cursive;
+    font-weight: 400;
+    font-size: 4rem;
+    color:$color-secondary;
+}
+
+.fas,
+.far{
+    font-size:2rem;
+}
