@@ -1,13 +1,10 @@
 .cart-icon{
-    border: none;
-    border-radius:0;
     position:absolute;
     background-color:$color-white;
     padding:1rem 3rem;
     transform: scale(0);
     opacity: 0;
     transition: .2s ease;
-    cursor: pointer;
     display: grid;
     grid-template-columns: repeat(2, max-content);
     align-items:center;

@@ -8,6 +8,11 @@
 
 html{
     font-size: 62.5%;
+
+    @media only screen and (max-width: 28.1em){
+        font-size: 50%;
+    }
+
 }
 
 body{
@@ -27,4 +32,10 @@ a{
 
 li{
     list-style: none;
+}
+
+button{
+    cursor: pointer;
+    border: none;
+    border-radius: 0;
 }

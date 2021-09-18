@@ -2,9 +2,9 @@ input[type="search"]{
     border:none;
     font-family: $font-display;
     font-size: 2rem;
-    font-weight: 200;
+    font-weight: 300;
     padding: 1.5rem;
-    color: $color-gray-dark-1;
+    color: $color-black;
     outline: 1px solid rgba($color-black, .2);
     background-color: $color-gray-light-1;
     letter-spacing:1px;
@@ -23,17 +23,15 @@ input[type="search"]{
         background-color: $color-secondary;
         height: 100%;
         padding: 1.6rem;
-        border: none;
         outline: 1px solid rgba($color-black, .3);
-        cursor: pointer;
     }   
 }
 
 ::placeholder{
     font-family: $font-display;
     font-size: 2rem;
-    color: rgba($color-black, .5);
-    font-weight: 200;
+    color:$color-black;
+    font-weight: 300;
     letter-spacing:1px;
 }
 

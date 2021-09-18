@@ -4,8 +4,7 @@
     font-family: $font-display;
 
     &__account{
-        border: 0;
-        border-radius: 0;
+       
 
         .fa-user{
             color:$color-secondary;
@@ -13,8 +12,7 @@
     
     }
     &__cart{
-        border: 0;
-        border-radius: 0;
+      
 
         .fa-shopping-cart{
             color:$color-secondary;
@@ -26,34 +24,32 @@
     background-color: $color-secondary;
 }
 
-.offer{
-    background-color: $color-black;
+.offers{
+
+    &__icons{
+        margin: auto;
+    }
 }
 
+
 .features{
-    margin: 5rem 0;
+    margin: 7rem 0;
 }
 
 .products{
     margin: 4rem 0;
 }
 
-
-.deals{
-    background-color: $color-gray-light-1;
-    padding:3rem;
-    
-}
-
-.gallery{
-    background-color: $color-gray-dark-2;
+.offers{
+    background-color:$color-gray-light-1;
+    padding:6rem;
 }
 
 .footer{
     padding: 5rem 3rem;
     background-color: $color-gray-light-1;
 
-    .email{
+    input[type="email"]{
         border: none;
         padding: 1rem;
         outline: 1px solid $color-secondary;
@@ -77,11 +73,9 @@
         &-btn{
             background-color: $color-primary;
             font-size: 1.6rem;
-            border: none;
             font-family: $font-display;
             color: #fff;
             padding: 1rem 1.5rem;
-            cursor: pointer;
         }
     }
 
