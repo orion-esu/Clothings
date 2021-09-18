@@ -154,7 +154,7 @@
 .gallery{
     grid-column: full-start/full-end;
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(5, 1fr);
 
     img{
         width: 100%;
