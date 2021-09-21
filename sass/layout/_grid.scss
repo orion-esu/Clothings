@@ -3,7 +3,7 @@
 // Container Grid Definitons
 .container {
 	display: grid;
-    grid-template-rows: 10% 80vh repeat(8, min-content);
+    grid-template-rows: min-content 80vh repeat(8, min-content);
     grid-template-columns:[full-start] minmax(6rem, 1fr) repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) minmax(6rem, 1fr) [full-end];
 
     @media only screen and (max-width: 52em){
@@ -90,18 +90,19 @@
 .product{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-template-rows: 1fr 1fr;
-    row-gap: 2rem;
-    column-gap:2rem;
+    // grid-template-rows: 1fr 1fr;
+    gap:2rem;
+    // row-gap: 2rem;
+    // column-gap:2rem;
 
-    &__details{
-        display: grid;
-        grid-template-columns: max-content;
-        grid-template-rows: repeat(2, min-content);
-        justify-content: center;
-        justify-items: center;
-        row-gap: .5rem;
-    }
+    // &__details{
+    //     display: grid;
+    //     grid-template-columns: max-content;
+    //     grid-template-rows: repeat(2, min-content);
+    //     justify-content: center;
+    //     justify-items: center;
+    //     row-gap: .5rem;
+    // }
 
 
 }
