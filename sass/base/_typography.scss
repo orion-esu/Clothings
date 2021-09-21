@@ -1,3 +1,16 @@
+// TYPOGRAPHY STYLES
+
+.heading-1{
+    font-size: 7rem;
+    color: $color-white;
+    font-weight:900;
+    font-family:$font-display;
+
+    @media only screen and (max-width:700px){
+        font-size:5rem;
+    }
+}
+
 .heading-2{
     font-family: $font-display;
     font-size: 3rem;
@@ -22,6 +35,12 @@
         letter-spacing: 1px;
         font-weight:400;
     }
+}
+
+.header__text{
+    font-size:2.2rem;
+    color: $color-gray-light-1;
+    font-family: $font-primary;
 }
 
 .offers__description{

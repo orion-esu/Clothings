@@ -1,8 +1,9 @@
 // Grid Definitions
 
+// Container Grid Definitons
 .container {
 	display: grid;
-    grid-template-rows: 10rem calc(100vh - 10rem) repeat(8, min-content);
+    grid-template-rows: 10% 80vh repeat(8, min-content);
     grid-template-columns:[full-start] minmax(6rem, 1fr) repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) minmax(6rem, 1fr) [full-end];
 
     @media only screen and (max-width: 52em){
@@ -10,26 +11,31 @@
     }
 
 }
+//////////////////////////////@at-root
 
+// Nav Grid Definitions
 .nav{
     grid-column: full-start/full-end;
     display:grid;
     grid-template-columns: max-content 1fr repeat(2, max-content);
+    grid-row: 1/2;
     justify-items: center;
-    align-items: center;
-    gap: 3rem;
+    align-content: center;
+    column-gap: 3rem;
+    row-gap: 2rem;
 
-    @media only screen and (max-width: 52em){
-        grid-template-columns: 1fr repeat(2, min-content);
+    @media only screen and (max-width:62.5em){
+        grid-template-columns: 1fr repeat(2, max-content);
+        grid-template-rows: repeat(2, max-content);
     }
     
-    @media only screen and (max-width: 37.5em){
+    @media only screen and (max-width: 47em){
         grid-template-columns: repeat(2, 1fr);
     }
 
     &__logo{
 
-        @media only screen and (max-width: 52em){
+        @media only screen and (max-width: 62.5em){
            grid-column: 1/-1;
         }
 
@@ -40,21 +46,26 @@
         grid-template-columns:1fr min-content;
         width: 70%;
 
-        @media only screen and (max-width: 52em){
+        @media only screen and (max-width: 62.5em){
             width: 90%;
         }
 
-        @media only screen and (max-width: 37.5em){
+        @media only screen and (max-width: 47em){
             grid-column: 1/-1;
             width: 100%;
          }
     }
 }
+//////////////////////////
+
+// Header Grid Definitions
 .header{
     grid-column: full-start/full-end;
     grid-row: 2/3;
 }
+///////////////////////////
 
+// Features Section Grid Definition
 .features{
     grid-column: col-start 1/ col-end 8;
     display: grid;
@@ -73,6 +84,9 @@
         justify-self: center;
     }
 }
+// /////////////////////////
+
+// Product Section Grid Definitions
 .product{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -91,8 +105,10 @@
 
 
 }
+////////////////////////////
 
-.products{
+// Category Section Grid Definitions
+.category{
     grid-column: col-start 1/ col-end 8;
     display: grid;
     grid-template-columns: 350px 1fr;
@@ -139,7 +155,9 @@
         }
     }
 }
+/////////////////////////////
 
+// OFfer Section Grid Definitions
 .offers{
     grid-column: full-start/full-end;
     display: grid;
@@ -150,7 +168,9 @@
     justify-items: center;
 
 }
+///////////////////////////////////
 
+// Gallery Section Grid Definition
 .gallery{
     grid-column: full-start/full-end;
     display: grid;
@@ -162,7 +182,9 @@
         object-fit: cover;
     }
 }
+////////////////////////////
 
+// FOOTER GRID DEFINITIONS
 .footer{
     grid-column: full-start/full-end;
     display: grid;
@@ -176,3 +198,4 @@
         grid-template-columns: min-content;
     }
 }
+/////////////////////////////////

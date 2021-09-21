@@ -1,3 +1,5 @@
+// SEARCH STYLES
+
 input[type="search"]{
     border:none;
     font-family: $font-display;
@@ -15,6 +17,16 @@ input[type="search"]{
     &:focus{
         outline: 1.5px solid rgba($color-black, .2);
     }
+
+    
+
+    &::placeholder{
+        font-family: $font-display;
+        font-size: 2rem;
+        color:$color-black;
+        font-weight: 300;
+        letter-spacing:1px;
+    }
 }
 
 .search{
@@ -25,14 +37,6 @@ input[type="search"]{
         padding: 1.6rem;
         outline: 1px solid rgba($color-black, .3);
     }   
-}
-
-::placeholder{
-    font-family: $font-display;
-    font-size: 2rem;
-    color:$color-black;
-    font-weight: 300;
-    letter-spacing:1px;
 }
 
 .fa-search{

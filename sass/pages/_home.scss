@@ -1,3 +1,4 @@
+//NAV STYLES
 .nav{
     background-color: $color-gray-light-1;
     padding: 2.5rem 5rem;
@@ -17,34 +18,70 @@
         .fa-shopping-cart{
             color:$color-secondary;
         }
+
     }
 }
+/////////////////////
 
+// HEADER STYLES
 .header{
-    background-color: $color-secondary;
-}
+    background-image: linear-gradient(rgba($color-black, .4), rgba($color-black, .4)), url(/img/hero.jpg.webp);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    display: grid;
+    align-items:center;
+  
+    &>*{
+        padding-left:12rem;
+        display: grid;
+        row-gap: 2.5rem;
+        justify-items: start;
+        grid-template-columns: minmax(500px, 60%);
 
+        @media only screen and (max-width:700px){
+            padding: 0 6rem;
+            grid-template-columns: 1fr;
+        }
+    }
+
+    &-btn{
+        color:$color-white;
+        font-size:1.8rem;
+        outline: 2px solid $color-white;
+        background-color:transparent;
+        padding:1.5rem 2rem;
+        font-weight:600;
+        font-family: $font-primary;
+        
+    }
+}
+///////////////////
+
+// FEATURES STYLES
+.features{
+    margin: 7rem 0;
+}
+///////////////////
+
+// CATEGORY STYLE
+.category{
+    margin: 4rem 0;
+}
+//////////////////////
+
+// OFFERS STYLES
 .offers{
+    background-color:$color-gray-light-1;
+    padding:6rem;
 
     &__icons{
         margin: auto;
     }
 }
+////////////////////
 
-
-.features{
-    margin: 7rem 0;
-}
-
-.products{
-    margin: 4rem 0;
-}
-
-.offers{
-    background-color:$color-gray-light-1;
-    padding:6rem;
-}
-
+// FOOTER STYLES
 .footer{
     padding: 5rem 3rem;
     background-color: $color-gray-light-1;
@@ -78,14 +115,14 @@
             padding: 1rem 1.5rem;
         }
     }
+        
+    .dot{
+        width: 1rem;
+        height: 1rem;
+        display: inline-block;
+        background-color: $color-primary;
+        margin-left: -6px;
 
+    }
 }
-
-.dot{
-    width: 1rem;
-    height: 1rem;
-    display: inline-block;
-    background-color: $color-primary;
-    margin-left: -6px;
-
-}
+//////////////////////

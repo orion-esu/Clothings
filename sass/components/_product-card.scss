@@ -1,53 +1,69 @@
-.product{
+// PRODUCT STYLES
 
-    &__details{
+.product__card{
+    transition: .2s ease;
+    position: relative;
+    display: grid;
+    align-items:center;
+    justify-items: center;
+
+    &:hover{
+        background-color: $color-white;
+        box-shadow: 0 1rem 2rem $color-gray-light-2;
+    }
+
+    &:hover .product__card--icon{
+        opacity:1;
+        transform: scale(1);
+    }
+
+    &--icon{
+        position:absolute;
+        background-color:$color-white;
+        padding:1rem 3rem;
+        transform: scale(0);
+        opacity: 0;
+        transition: .2s ease;
+        display: grid;
+        grid-template-columns: repeat(2, max-content);
+        align-items:center;
+        gap:.8rem;
+        
+        .fa-shopping-cart{
+            color: $color-primary;
+            font-size: 2rem;
+        }
+    }
+
+    &--text{
+        font-size: 1.8rem;
+        font-weight: 500;
+    }
+   
+    &--details{
+        display:grid;
+        row-gap:1rem;
+        justify-items: center;
         padding: 3rem 2rem;
     }
-    &-title{
+
+    &--title{
         font-size: 1.6rem;
         font-family: $font-display;
         font-weight: 400;
         text-align: center;
     }
     
-    &-cost{
+    &--cost{
         font-size: 2rem;
         font-family: $font-display;    
         font-weight: 600;
         color: $color-primary
     }
 
-    &-img{
+    &--img{
         width: 100%;
         height: 100%;
         object-fit: cover;
     }
-
-    .product__2,
-    .product__3,
-    .product__4,
-    .product__5,
-    .product__6,
-    .product__7{
-        transition: .2s ease;
-        position: relative;
-        display: grid;
-        align-items:center;
-        justify-items: center;
-
-        &:hover{
-            background-color: $color-white;
-            box-shadow: 0 1rem 2rem $color-gray-light-2;
-        }
-
-        &:hover .cart-icon{
-            opacity: 1;
-            transform: scale(1);
-        }
-    }
-
-    &__banner-img{
-        filter: brightness(70%);
-    }
 }
-

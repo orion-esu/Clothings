@@ -1,3 +1,5 @@
+// PRODUCT BANNER STYLES
+
 .product__banner {
     position: relative;
     display: flex;
@@ -13,6 +15,7 @@
     &--title{
         font-weight: 700;
         font-size: 5rem;
+        margin-bottom: 3rem;
     }
 
     &--link{
@@ -21,9 +24,9 @@
         font-weight: 500;
         border-bottom: 3px solid $color-white;
         padding-bottom: 3px;
-        margin-top: 3rem;
     }
     &-img{
+        filter: brightness(70%);
 
         @media only screen and (max-width: 51.5em){
             width: 100%;
