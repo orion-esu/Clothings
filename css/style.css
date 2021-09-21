@@ -522,7 +522,6 @@ input[type="search"] {
   display: grid;
   grid-template-columns: repeat(5, 1fr); }
   .gallery img {
-    width: 100%;
     height: 100%;
     object-fit: cover; }
 
@@ -560,6 +559,8 @@ input[type="search"] {
   align-items: center; }
   .header > * {
     padding-left: 12rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
     display: grid;
     row-gap: 2.5rem;
     justify-items: start;
