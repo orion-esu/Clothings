@@ -633,7 +633,7 @@ input[type="search"] {
   @media only screen and (max-width: 31.25em) {
     .gallery {
       grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: repeat(2, 50px); } }
+      grid-template-rows: repeat(2, 1fr); } }
   .gallery img {
     height: 100%;
     object-fit: cover; }
