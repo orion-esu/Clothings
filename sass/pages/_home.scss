@@ -83,10 +83,29 @@
 }
 ////////////////////
 
+//GALLERY STYLES
+
+.gallery{
+
+    img{
+        height: 100%;
+        object-fit: cover;
+    }
+
+    // @media only screen and (max-width: 31.25em){
+    //     display: none;
+    // }
+}
+///////////////////
+
 // FOOTER STYLES
 .footer{
     padding: 5rem 3rem;
     background-color: $color-gray-light-1;
+
+    // @media only screen and (max-width: 31.25em){
+    //     padding: 2rem 3rem;
+    // }
 
     input[type="email"]{
         border: none;

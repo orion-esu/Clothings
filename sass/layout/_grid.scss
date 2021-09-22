@@ -162,27 +162,6 @@
     grid-column: full-start/full-end;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-
-    @media only screen and (max-width: 31.25em){
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-    }
-
-    img{
-        height: 100%;
-        object-fit: cover;
-    }
-
-    &-img1,
-    &-img2,
-    &-img3,
-    &-img4,
-    &-img9,
-    &-img10{
-        @media only screen and (max-width: 31.25em){
-            display: none;
-        }   
-    }
 }
 ////////////////////////////
 

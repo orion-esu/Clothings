@@ -630,16 +630,6 @@ input[type="search"] {
   grid-column: full-start/full-end;
   display: grid;
   grid-template-columns: repeat(5, 1fr); }
-  @media only screen and (max-width: 31.25em) {
-    .gallery {
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: repeat(2, 1fr); } }
-  .gallery img {
-    height: 100%;
-    object-fit: cover; }
-  @media only screen and (max-width: 31.25em) {
-    .gallery-img1, .gallery-img2, .gallery-img3, .gallery-img4, .gallery-img9, .gallery-img10 {
-      display: none; } }
 
 .footer {
   grid-column: full-start/full-end;
@@ -705,6 +695,10 @@ input[type="search"] {
   padding: 6rem; }
   .offers__icons {
     margin: auto; }
+
+.gallery img {
+  height: 100%;
+  object-fit: cover; }
 
 .footer {
   padding: 5rem 3rem;
