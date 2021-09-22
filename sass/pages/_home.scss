@@ -41,7 +41,7 @@
         justify-items: start;
         grid-template-columns: minmax(500px, 60%);
 
-        @media only screen and (max-width:700px){
+        @media only screen and (max-width:43.75em){
             padding: 0 6rem;
             grid-template-columns: 1fr;
         }

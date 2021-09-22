@@ -35,7 +35,7 @@ button {
   color: #fff;
   font-weight: 900;
   font-family: "Josefin Sans", sans-serif; }
-  @media only screen and (max-width: 700px) {
+  @media only screen and (max-width: 43.75em) {
     .heading-1 {
       font-size: 5rem; } }
 
@@ -674,7 +674,7 @@ input[type="search"] {
     row-gap: 2.5rem;
     justify-items: start;
     grid-template-columns: minmax(500px, 60%); }
-    @media only screen and (max-width: 700px) {
+    @media only screen and (max-width: 43.75em) {
       .header > * {
         padding: 0 6rem;
         grid-template-columns: 1fr; } }
