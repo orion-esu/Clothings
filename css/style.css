@@ -700,9 +700,16 @@ input[type="search"] {
   height: 100%;
   object-fit: cover; }
 
+@media only screen and (max-width: 31.25em) {
+  .gallery {
+    display: none; } }
+
 .footer {
   padding: 5rem 3rem;
   background-color: #f7f7f7; }
+  @media only screen and (max-width: 31.25em) {
+    .footer {
+      padding: 2rem 3rem; } }
   .footer input[type="email"] {
     border: none;
     padding: 1rem;
