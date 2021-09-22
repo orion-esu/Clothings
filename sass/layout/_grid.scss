@@ -164,7 +164,7 @@
     grid-template-columns: repeat(5, 1fr);
 
     @media only screen and (max-width: 31.25em){
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 
     img{
@@ -172,6 +172,7 @@
         object-fit: cover;
     }
 
+    &-img9,
     &-img10{
         @media only screen and (max-width: 31.25em){
             display: none;

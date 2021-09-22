@@ -632,12 +632,12 @@ input[type="search"] {
   grid-template-columns: repeat(5, 1fr); }
   @media only screen and (max-width: 31.25em) {
     .gallery {
-      grid-template-columns: repeat(3, 1fr); } }
+      grid-template-columns: repeat(2, 1fr); } }
   .gallery img {
     height: 100%;
     object-fit: cover; }
   @media only screen and (max-width: 31.25em) {
-    .gallery-img10 {
+    .gallery-img9, .gallery-img10 {
       display: none; } }
 
 .footer {
