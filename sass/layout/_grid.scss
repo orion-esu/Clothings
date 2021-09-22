@@ -163,9 +163,19 @@
     display: grid;
     grid-template-columns: repeat(5, 1fr);
 
+    @media only screen and (max-width: 31.25em){
+        grid-template-columns: repeat(3, 1fr);
+    }
+
     img{
         height: 100%;
         object-fit: cover;
+    }
+
+    &-img10{
+        @media only screen and (max-width: 31.25em){
+            display: none;
+        }   
     }
 }
 ////////////////////////////
