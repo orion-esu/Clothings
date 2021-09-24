@@ -561,7 +561,7 @@ input[type="search"] {
   grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
   gap: 3rem;
   justify-content: center; }
-  @media only screen and (max-width: 570px) {
+  @media only screen and (max-width: 35.625em) {
     .product {
       grid-template-columns: minmax(min-content, 300px); } }
 
@@ -571,7 +571,7 @@ input[type="search"] {
   grid-template-columns: 350px 1fr;
   gap: 3rem;
   align-items: center; }
-  @media only screen and (max-width: 1000px) {
+  @media only screen and (max-width: 62.5em) {
     .category {
       grid-template-columns: 1fr; } }
   .category__men {
