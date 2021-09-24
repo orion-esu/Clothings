@@ -339,10 +339,9 @@ button {
     .product__card--icon .fa-shopping-cart {
       color: #c69963;
       font-size: 2rem; }
-    @media only screen and (max-width: 59em) {
+    @media only screen and (max-width: 950px) {
       .product__card--icon {
-        transform: translate(-50%, -50%) scale(1);
-        opacity: 1; } }
+        display: none; } }
   .product__card--text {
     font-size: 1.8rem;
     font-weight: 500; }
@@ -386,7 +385,7 @@ button {
     padding-bottom: 3px; }
   .product__banner-img {
     filter: brightness(70%); }
-    @media only screen and (max-width: 51.5em) {
+    @media only screen and (max-width: 62.5em) {
       .product__banner-img {
         width: 100%;
         height: 50vh;
@@ -578,8 +577,12 @@ input[type="search"] {
 
 .product {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 3rem; }
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 3rem;
+  justify-content: center; }
+  @media only screen and (max-width: 570px) {
+    .product {
+      grid-template-columns: minmax(min-content, 300px); } }
 
 .category {
   grid-column: col-start 1/ col-end 8;
@@ -587,35 +590,45 @@ input[type="search"] {
   grid-template-columns: 350px 1fr;
   gap: 3rem;
   align-items: center; }
-  @media only screen and (max-width: 59em) {
-    .category {
-      grid-template-columns: 250px 1fr; } }
-  @media only screen and (max-width: 51.5em) {
+  @media only screen and (max-width: 1000px) {
     .category {
       grid-template-columns: 1fr; } }
   .category__men {
-    grid-template-columns: 1fr 350px;
-    grid-template-rows: min-content; }
+    grid-template-columns: 1fr 350px; }
+    @media only screen and (max-width: 62.5em) {
+      .category__men {
+        grid-template-columns: 1fr; } }
     .category__men .product__banner {
       grid-column: 2/3; }
-      @media only screen and (max-width: 51.5em) {
+      @media only screen and (max-width: 62.5em) {
         .category__men .product__banner {
           grid-column: 1/-1;
           grid-row: 1/2; } }
+      @media only screen and (max-width: 62.5em) {
+        .category__men .product__banner-img {
+          object-position: left -14rem; } }
+      @media only screen and (max-width: 37.5em) {
+        .category__men .product__banner-img {
+          object-position: center; } }
     .category__men .product {
       grid-column: 1/2;
       grid-row: 1/2; }
-      @media only screen and (max-width: 51.5em) {
+      @media only screen and (max-width: 62.5em) {
         .category__men .product {
           grid-column: 1/-1;
           grid-row: 2/3; } }
-    @media only screen and (max-width: 59em) {
-      .category__men {
-        grid-template-columns: 1fr 250px; } }
-    @media only screen and (max-width: 51.5em) {
-      .category__men {
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(2, min-content); } }
+  @media only screen and (max-width: 62.5em) {
+    .category__women .product__banner-img {
+      object-position: left -45rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .category__women .product__banner-img {
+      object-position: center; } }
+  @media only screen and (max-width: 62.5em) {
+    .category__kids .product__banner-img {
+      object-position: left -35rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .category__kids .product__banner-img {
+      object-position: center; } }
 
 .offers {
   grid-column: full-start/full-end;

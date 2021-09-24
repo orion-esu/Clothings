@@ -5,8 +5,6 @@
     position: relative;
     display: grid;
     grid-template-rows: 1fr min-content;
-    // align-items:center;
-    // justify-items: center;
 
     @media only screen and (max-width: 59em){
         box-shadow: 0 1rem 2rem rgba($color-gray-dark-1, $alpha: 0.2);
@@ -41,9 +39,8 @@
             font-size: 2rem;
         }
 
-        @media only screen and (max-width: 59em){
-            transform: translate(-50%, -50%) scale(1);
-            opacity: 1;
+        @media only screen and (max-width: 950px){
+            display:none;
         }
     }
 

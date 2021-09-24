@@ -89,8 +89,13 @@
 // Product Section Grid Definitions
 .product{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
     gap:3rem;
+    justify-content: center;
+
+    @media only screen and (max-width: 570px){
+        grid-template-columns: minmax(min-content, 300px);
+    }
 }
 ////////////////////////////
 
@@ -102,43 +107,74 @@
     gap: 3rem;
     align-items: center;
 
-    @media only screen and (max-width: 59em){
-        grid-template-columns: 250px 1fr;
-    }
-
-    @media only screen and (max-width: 51.5em){
+    @media only screen and (max-width: 1000px){
         grid-template-columns: 1fr;
     }
 
+
     &__men{
         grid-template-columns: 1fr 350px;
-        grid-template-rows: min-content;
 
-      
+        @media only screen and (max-width: 62.5em){
+            grid-template-columns: 1fr;
+        }
 
         .product__banner{
             grid-column:2/3;
 
-            @media only screen and (max-width: 51.5em){
-              grid-column: 1/-1;
-              grid-row: 1/2;
+            @media only screen and (max-width: 62.5em){
+                grid-column: 1/-1;
+                grid-row: 1/2;
+            }
+
+            &-img{
+
+                @media only screen and (max-width: 62.5em){          
+                    object-position: left -14rem;
+                }
+
+                @media only screen and (max-width: 37.5em){          
+                    object-position: center;
+                }
             }
         }
+
         .product{
             grid-column: 1/2;
             grid-row: 1/2;
-            @media only screen and (max-width: 51.5em){
+
+            @media only screen and (max-width: 62.5em){
                 grid-column: 1/-1;
                 grid-row: 2/3;
               }
         }
+    }
 
-        @media only screen and (max-width:59em){
-            grid-template-columns: 1fr 250px;
+    &__women{
+        .product__banner-img{
+
+            @media only screen and (max-width: 62.5em){          
+                object-position: left -45rem;
+            }
+
+            @media only screen and (max-width: 37.5em){          
+                object-position: center;
+            }
+
         }
-        @media only screen and (max-width: 51.5em){
-            grid-template-columns: 1fr;
-            grid-template-rows: repeat(2, min-content);
+    }
+    &__kids{
+
+        .product__banner-img{
+
+            @media only screen and (max-width: 62.5em){          
+                object-position: left -35rem;
+            }
+
+            @media only screen and (max-width: 37.5em){          
+                object-position: center;
+            }
+
         }
     }
 }
