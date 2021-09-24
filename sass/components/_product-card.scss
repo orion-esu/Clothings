@@ -20,29 +20,29 @@
         transform: translate(-50%, -50%) scale(1);
     }
 
-    &--icon{
-        position:absolute;
-        top:65%;
-        left: 50%;
-        transform: translate(-50%, -50%) scale(0);
-        background-color:$color-white;
-        padding:1rem 3rem;
-        opacity: 1;
-        transition: .2s ease;
-        display: grid;
-        grid-template-columns: repeat(2, max-content);
-        align-items:center;
-        gap:.8rem;
+    // &--icon{
+    //     position:absolute;
+    //     top:65%;
+    //     left: 50%;
+    //     transform: translate(-50%, -50%) scale(0);
+    //     background-color:$color-white;
+    //     padding:1rem 3rem;
+    //     opacity: 1;
+    //     transition: .2s ease;
+    //     display: grid;
+    //     grid-template-columns: repeat(2, max-content);
+    //     align-items:center;
+    //     gap:.8rem;
        
-        .fa-shopping-cart{
-            color: $color-primary;
-            font-size: 2rem;
-        }
+    //     .fa-shopping-cart{
+    //         color: $color-primary;
+    //         font-size: 2rem;
+    //     }
 
-        @media only screen and (max-width: 950px){
-            display:none;
-        }
-    }
+    //     @media only screen and (max-width: 950px){
+    //         display:none;
+    //     }
+    // }
 
     &--text{
         font-size: 1.8rem;

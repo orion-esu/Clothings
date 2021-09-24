@@ -323,25 +323,6 @@ button {
   .product__card:hover .product__card--icon {
     opacity: 1;
     transform: translate(-50%, -50%) scale(1); }
-  .product__card--icon {
-    position: absolute;
-    top: 65%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(0);
-    background-color: #fff;
-    padding: 1rem 3rem;
-    opacity: 1;
-    transition: .2s ease;
-    display: grid;
-    grid-template-columns: repeat(2, max-content);
-    align-items: center;
-    gap: .8rem; }
-    .product__card--icon .fa-shopping-cart {
-      color: #c69963;
-      font-size: 2rem; }
-    @media only screen and (max-width: 950px) {
-      .product__card--icon {
-        display: none; } }
   .product__card--text {
     font-size: 1.8rem;
     font-weight: 500; }
