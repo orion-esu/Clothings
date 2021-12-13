@@ -149,7 +149,7 @@ button {
   position: absolute; }
 
 .cart {
-  grid-column: col-start 7/full-end;
+  grid-column: col-start 7 / full-end;
   z-index: 100;
   background-color: #fff;
   padding: 5rem;
@@ -162,8 +162,7 @@ button {
   height: 100vh;
   row-gap: 3vh;
   grid-template-rows: repeat(6, max-content);
-  transform: translateX(400px);
-  transition: .4s ease; }
+  transition: 0.4s ease; }
   @media only screen and (max-width: 25em) {
     .cart {
       width: 100%; } }
@@ -171,20 +170,10 @@ button {
     display: grid;
     grid-template-columns: 1fr 5rem;
     align-items: center; }
-  .cart__open {
+  .cart__close {
     background: none;
-    display: grid;
-    row-gap: 5px; }
-    .cart__open-line {
-      width: 3rem;
-      height: 1px;
-      background-color: #101d2c; }
-      .cart__open-line1 {
-        transform: translate(0px, 6px) rotateZ(45deg); }
-      .cart__open-line2 {
-        opacity: 0; }
-      .cart__open-line3 {
-        transform: translate(-1px, -6px) rotateZ(-45deg); }
+    cursor: pointer;
+    font-size: 3.5rem; }
   .cart__heading {
     font-size: 2rem;
     font-weight: 500;
@@ -213,8 +202,8 @@ button {
     .cart-btn a {
       color: #fff; }
 
-.nav__cart:active + .cart,
-.nav__cart:focus + .cart {
+.hidden {
+  display: none;
   transform: translateX(0px); }
 
 .checkout {
