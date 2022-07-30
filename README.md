@@ -17,7 +17,7 @@ Users should be able to:
 ![](/img/Screenshot.png)
 
 ## Running the Project
-Live Version: https://tip-calcapp.netlify.app
+Live Version: https://clothing-x.netlify.app/
 
 From the repo:
 - Clone this repo to your computer.
