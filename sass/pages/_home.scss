@@ -6,6 +6,7 @@
 
     &__account{
         padding: 1rem 2rem;
+        display: hidden;
 
         .fa-user{
             color:$color-secondary;
